@@ -6,8 +6,8 @@ class Post:
     def __init__(self):
         self.all_posts_json = requests.get(blog_get_url).json()
 
-    def get_title(self, nr_of_blog):
-        return self.all_posts_json[nr_of_blog]["title"]
+    def get_title(self, number_post):
+        return self.all_posts_json[number_post]["title"]
 
     def get_subtitle(self, nr_of_blog):
         return self.all_posts_json[nr_of_blog]["subtitle"]
